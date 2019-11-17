@@ -75,4 +75,11 @@ class GameLogic {
         choiceAI();
         win();
     }
+
+    public String getWeaponPlayer() {
+        return weaponPlayer;
+    }
+    public String setWeaponPlayer(String weaponPlayer) {
+        return this.weaponPlayer = weaponPlayer;
+    }
 }
