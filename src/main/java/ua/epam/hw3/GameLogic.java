@@ -1,7 +1,9 @@
+package ua.epam.hw3;
+
 import java.util.Random;
 import java.util.Scanner;
 
-class GameLogic {
+public class GameLogic {
     private static final String WIN_TEXT = "You win!";
     private static final String LOSE_TEXT = "You lose!";
     private static final String TIE_TEXT = "Tie!";
@@ -47,24 +49,24 @@ class GameLogic {
         }
     }
     private void win() {
-        if (weaponPlayer.equals(weaponAI)){
+        if (weaponPlayer.equals(weaponAI)) {
             System.out.println(TIE_TEXT);
         } else if (weaponPlayer.equals(paper)) {
             if (weaponAI.equals(scissors)) {
                 System.out.println(LOSE_TEXT);
-            } else if(weaponAI.equals(rock)) {
+            } else if (weaponAI.equals(rock)) {
                 System.out.println(WIN_TEXT);
             }
         } else if (weaponPlayer.equals(scissors)) {
             if (weaponAI.equals(rock)) {
                 System.out.println(LOSE_TEXT);
-            } else if(weaponAI.equals(paper)) {
+            } else if (weaponAI.equals(paper)) {
                 System.out.println(WIN_TEXT);
             }
         } else if (weaponPlayer.equals(rock)) {
             if (weaponAI.equals(paper)) {
                 System.out.println(LOSE_TEXT);
-            } else if(weaponAI.equals(scissors)) {
+            } else if (weaponAI.equals(scissors)) {
                 System.out.println(WIN_TEXT);
             }
         }
