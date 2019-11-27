@@ -26,7 +26,7 @@ public class GameLogic {
                 break;
         }
     }
-    private void win(GameWeapon gameWeapon) {
+    private void checkWinner(GameWeapon gameWeapon) {
         if (gameWeapon.getWeaponPlayer().equals(gameWeapon.getWeaponAI())) {
             System.out.println(TIE_TEXT);
         } else if (gameWeapon.getWeaponPlayer().equals("paper")) {
@@ -53,7 +53,7 @@ public class GameLogic {
     public GameWeapon start(GameWeapon gameWeapon,String str) {
         gameWeapon.setWeaponPlayer(str);
         choiceAI(gameWeapon);
-        win(gameWeapon);
+        checkWinner(gameWeapon);
         return gameWeapon;
     }
 }
