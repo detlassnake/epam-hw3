@@ -1,5 +1,6 @@
 package ua.epam.hw3;
 
+
 public class GameWeapon {
     private String weaponPlayer = "";
     private String weaponAI = "";
